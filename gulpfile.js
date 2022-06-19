@@ -10,7 +10,6 @@ const concat = require("gulp-concat");
 const autoprefixer = require("gulp-autoprefixer");
 const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
-const rename = require("gulp-rename");
 const del = require("del");
 const browserSync = require("browser-sync").create();
 
@@ -29,7 +28,7 @@ function styles() {
     .pipe(scss({
       outputStyle: "compressed"
     }))
-    .pipe(concat())
+    .pipe(concat("style.min.css"))
     .pipe(
       autoprefixer({
         overrideBrowserslist: ["last 10 versions"],

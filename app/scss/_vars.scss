@@ -1,37 +1,50 @@
-$accent: #fe3e57;
-$default: #8d8d8d;
-$title: #29282d;
-$bg: #f6f6f6;
+$accent: #a3bbc8;
+$accent-medium: #436372;
+$accent-dark: #243f4d;
+$default: #7b7b7b;
+$title: #191919;
+$bg: #fef7f0;
+$bg-dark: #fcd7b6;
 
-%quicksand-400 {
-  font-family: "Quicksand-Regular", sans-serif;
+%rubik-400 {
+  font-family: "Rubik-Regular", sans-serif;
   font-weight: 400;
 }
 
-%quicksand-500 {
-  font-family: "Quicksand-medium", sans-serif;
+%rubik-500 {
+  font-family: "Rubik-medium", sans-serif;
   font-weight: 500;
 }
 
-%roboto-400 {
-  font-family: "Roboto-Regular", sans-serif;
+%DMSans-400 {
+  font-family: "DMSans-Regular", sans-serif;
   font-weight: 400;
 }
 
-%roboto-700 {
-  font-family: "Roboto-Bold", sans-serif;
+%DMSans-700 {
+  font-family: "DMSans-Bold", sans-serif;
   font-weight: 700;
 }
 
-%btn {
-  padding: 12px 26px;
-  text-transform: uppercase;
-  color: #fff;
-  box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
-  background-color: $accent;
-  @extend %roboto-400;
-  cursor: pointer;
+%DMSans-500 {
+  font-family: "DMSans-Medium", sans-serif;
+  font-weight: 500;
 }
+
+%poppins-700 {
+  font-family: "Poppins-Bold", sans-serif;
+  font-weight: 700;
+}
+
+// %btn {
+//   padding: 12px 26px;
+//   text-transform: uppercase;
+//   color: #fff;
+//   box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+//   background-color: $accent;
+//   @extend %roboto-400;
+//   cursor: pointer;
+// }
 
 %checkbox-hidden,
 %radio-hidden {
@@ -45,6 +58,7 @@ $bg: #f6f6f6;
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }
+
 @function min($numbers...) {
   @return m#{i}n(#{$numbers});
 }

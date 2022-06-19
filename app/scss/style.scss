@@ -4,7 +4,102 @@
 @import "libs";
 @import "global";
 
+.header {
+  padding: 48px 0;
 
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__list-item+.menu__list-item {
+    padding-left: 35px;
+  }
+
+  &__list-link {
+    @extend %rubik-500;
+    font-size: 15px;
+    color: $accent-medium;
+    font-weight: 500;
+
+  }
+}
+
+.user-nav {
+  display: flex;
+  align-items: center;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    padding: 21px 40px 13px;
+    margin-left: 20px;
+    background-color: $bg-dark;
+    border-radius: 30px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: #fde7d3;
+      width: 1px;
+      height: 32px;
+      right: 87px;
+      top: 9px;
+    }
+  }
+
+  &__link--menu {
+    margin-left: 20px;
+  }
+
+  &__link--like {
+    margin-right: 29px;
+    position: relative;
+
+  }
+
+  &__num {
+    font-size: 13px;
+  }
+
+  &__num--like {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    right: -11px;
+    top: -8px;
+  }
+
+  &__link--cart {
+    margin-left: 29px;
+    position: relative;
+  }
+
+  &__num--cart {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    right: -7px;
+    top: -8px;
+  }
+}
 
 
 
